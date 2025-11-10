@@ -1,0 +1,132 @@
+/*Importer les polices*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+/*Données du design*/
+:root{
+    /*Colors*/
+    --golden-beige :#97864C;
+    --warm-brown: #684308;
+    --sand-beige: #8E7D5C;
+    /*Text configuration*/
+    --header-font: 'Cormorant SC';
+    --body-font: 'Instrument Serif';
+    --title-font: 'Cormorant SC';
+
+    --title-color:#453719;
+    --text-color:#684308;
+
+    --header-font-weight :600;
+    --body-font-weight : 400;
+    --title-font-weight: 700;
+
+    --header-font-size :2rem;
+    --body-font-size : 2rem;
+    --title-font-size : 3rem;
+
+    --header-line-height: 2.5rem;
+    --body-line-height: 1.5rem;
+    --title-line-height: 3rem;
+
+}
+/* Mise en place du background */
+body{
+    background-image: url('image/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+/*h1font*/
+h1{
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    text-decoration: underline;
+    text-decoration-color: #684308;
+    text-decoration-thickness: 0.2rem;
+    color: var(--title-color);
+}
+/*p font*/
+p{
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--text-color);
+}
+/*border image*/
+#portfolio img{
+    border-radius:120px;
+    border: 3px solid black;
+}
+/*section button*/
+.bouton{
+    width: 250px;
+    border: 1px solid;
+    border-radius: 120px;
+    border-color: #322b15;
+    background-color: #97864C;
+    font-size: var(--body-font-size);
+    font-family: var(--body-font);
+    font-weight: var(--body-font-weight);
+    text-align: center;
+}
+.bouton a{
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+}
+/*Création du design de la partie header*/
+.entete{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+.initiales{
+    background-color: #8E7D5C;
+    border: 1px solid ;
+    border-color: #684308 ;
+    border-radius: 120px;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    color: #684308;
+}
+.menu {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    font-weight: var(--body-font-weight);
+}
+nav a{
+    color: #684308;
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav a:hover,
+nav a.active{
+    text-decoration: underline;
+    text-decoration-color: #684308;
+    text-decoration-thickness: 0.1rem;
+    line-height: var(--header-line-height);
+}
+/*hero section*/
+#introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(151, 134, 76, 0.7);
+    min-height: 35vh;
+    margin-left: 0;
+    border: 3px solid #97864C ;
+}
+#introduction h1{
+    margin-bottom: -5px;
+}
